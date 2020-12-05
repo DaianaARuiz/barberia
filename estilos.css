@@ -86,11 +86,14 @@ body{
 }
 .locales{
     width: 100%;
-    height: 100%;
+    padding-top:60px;
+    padding-bottom:100px;
     text-align: center;
+    background: #ccc;
 }
 .locales__logo{
     font-size: 45px;
+    margin:50px;
     color: #181818;
     text-transform: uppercase;
 }
@@ -101,6 +104,7 @@ body{
     justify-content: center;
 }
 
+
 .contacto{
     width: 100%;
     height: 100vh;
@@ -109,53 +113,81 @@ body{
     display: flex;
 }
 
+
 .contacto__formulario{
     width: 80%;
-    margin: auto;
-    height: 80%;
+    margin:auto;
+    height: 100%;
     background: #3d3d3d;
     border-radius: 50px;
     display: flex;
     justify-content:center;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
+    flex-wrap: wrap;
     color: #ccc;
 }
 
-.contacto__formulario__input,
-.contacto__formulario__submit{
-    width: 50%;
-    height: 40px; 
+
+.titulo-footer,
+.subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.subtitulo-footer {
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 45%; 
+    padding: 13px;
     border: none;
-    background: #181818;
-    color: #ccc;
-}
-.contacto__formulario__label{
-    padding: 5px;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
 }
 
-.contacto__formulario__submit{
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    margin-left:52px;
+    max-width: 90%;
+    min-width: 40%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    margin-left:52px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
     cursor: pointer;
 }
-.contacto__formulario__submit:hover{
-    background: #ccc;
-    color: #181818;
-}
-textarea{
-    resize: none;
-    height:100px;
-}
 
-input::placeholder {
-    padding-left: 16px;
-    font-family: 'Raleway', sans-serif;
-}
-
-textarea::placeholder {
-    padding: 16px;
-    font-family: 'Raleway', sans-serif;
-}
-    
+/*------------------------------------------------------FOOTER------------------------------------------------------------*/
 
 .footer{
     width: 100%;
